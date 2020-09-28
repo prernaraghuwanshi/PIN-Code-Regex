@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class Regex {
-	private static final Pattern PIN_PATTERN = Pattern.compile("^[0-9]{6}$");
+	private static final Pattern PIN_PATTERN = Pattern.compile("^[0-9]{3}\\s{0,1}[0-9]{3}$");
 	private static Scanner sc;
     
 	private boolean checkPIN(String pin) {
